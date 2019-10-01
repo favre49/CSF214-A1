@@ -1,15 +1,15 @@
 # CSF214-A1
 First Assignment for CS F214 - Logic in Computer Science
 
-### Group Members
+### Group Members:
 
-**Rahul Ganesh Prabhu**
+Rahul Ganesh Prabhu
 
-**Shreyas Kera**
+Shreyas Kera
 
-**Achyut Anand Tadepalli**
+Achyut Anand Tadepalli
 
-**Raghurama Varma Gonella**
+Raghurama Varma Gonella
 
 ### Problem 1
 
