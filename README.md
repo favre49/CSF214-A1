@@ -4,8 +4,11 @@ First Assignment for CS F214 - Logic in Computer Science
 ### Group Members
 
 **Rahul Ganesh Prabhu**
+
 **Shreyas Kera**
+
 **Achyut Anand Tadepalli**
+
 **Raghurama Varma Gonella**
 
 ### Problem 1
