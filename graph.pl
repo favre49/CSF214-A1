@@ -1,15 +1,21 @@
 weight(p,q,20).
 weight(q,r,20).
-weight(q,t,10).
-weight(t,p,10).
+weight(q,t,20).
+weight(p,t,20).
 weight(t,r,20).
 
-findPath(A,B,[A,B],X):-
-    weight(A,B,X).
+edge(A,B,W):-
+    weight(A,B,W);
+    weight(B,A,W).
 
-findPath(A,B,Path,Length):-
-    weight(A,C,X),
-    \+member(Path,C),
-    path(C,B,NextPath,NextLength),
-    Path=[A|NextPath],
-    Length is X + NextLength.
+traverse([B|Route],B,[B|Route],Len,Len).
+
+traverse([A|Route],B,Path,CurrLen,Len):-
+    edge(A,C,X),
+    \+member(C,[A|Route]),
+    NewLength is CurrLen + X,
+    traverse([C,A|Route],B,Path,NewLength,Len).
+
+findPath(A,B,Path,Len):-
+    traverse([A],B,RevPath,0,Len),
+    reverse(Path,RevPath).
