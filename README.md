@@ -47,7 +47,7 @@ For a sample test check, try:
 
         ?- findPath(p,r,Path,Len).
 
-### Problem 2
+## Problem 2
 
 Write a Prolog predicate for each of the following operations on a list:
     - sublist(X,Y): true if list X is a sublist of list Y. A sublist is the original list, in the same order, but with no/some elements removed. 
