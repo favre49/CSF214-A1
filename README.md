@@ -1,7 +1,7 @@
 # CSF214-A1
 First Assignment for CS F214 - Logic in Computer Science
 
-### Group Members:
+## Group Members:
 
 Rahul Ganesh Prabhu
 
@@ -11,9 +11,9 @@ Achyut Anand Tadepalli
 
 Raghurama Varma Gonella
 
-### Problem 1
+## Problem 1
 
-## The Problem:
+### The Problem:
 Given a weighted undirected graph G = (V, E). The weight on an edge (v1, v2) represents the distance between the vertices v1 and v2 {vi V; and (vi, vj) E}. Given a set of weights of edges in the form of prolog clauses:
 weight(p, q, 20).
 weight(q, r, 5).
@@ -30,7 +30,7 @@ the prolog interpreter should print:
 Note that the user should print an alternative path if it exists on each press of a semi colon and print no if no path exists.
 Your program should avoid traversing through cycles, if any.
 
-## How to run:
+### How to run:
 To test it on the simple graph test case, run:
 
         swipl graphTraversal.pl simpleGraphTest.pl
