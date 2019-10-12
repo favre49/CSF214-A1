@@ -9,7 +9,7 @@ Shreyas Kera
 
 Achyut Anand Tadepalli
 
-Raghurama Varma Gonella
+Raghurama Varma Gonela
 
 ## Problem 1
 
