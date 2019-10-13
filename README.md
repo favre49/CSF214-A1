@@ -49,6 +49,7 @@ For a sample test check, try:
 
 ## Problem 2
 
+### The Problem:
 Write a Prolog predicate for each of the following operations on a list:
 
 - sublist(X,Y): true if list X is a sublist of list Y. A sublist is the original list, in the same order, but with no/some elements removed. 
@@ -60,3 +61,33 @@ Write a Prolog predicate for each of the following operations on a list:
 - remove_every_other(X,Y): prints a list Y which is the list X with every other element removed (the two lists should have the same first element). 
 
 Note: Each predicate should be able to print the alternative solutions if they exist.
+
+### How to run:
+To test the predicates, run:
+
+        swipl sublist.pl hasTriplicate.pl removeEveryOther.pl removeNth.pl 
+
+For test cases for sublist, run:
+
+        ?- sublist([x,y,z],[a,b,x,c,d,y,z]).
+        ?- sublist([a,b,c],[w,a,b,c,r]).
+        ?- sublist([],[]). %Edge case
+        ?- sublist([a,b],[w,r]). %Negative case
+
+For test cases for has_triplicate, run:
+
+        ?- has_Triplicate([x,y,x,x,f,x]).
+        ?- has_Triplicate([a,b,a,b,a,b]).
+        ?- has_Triplicate([]). %Edge case
+        ?- has_Triplicate([x,y,z,z,y,x]). % Negative case
+
+For test cases f0r remove_nth, run:
+
+        ?- remove_nth(3,[a,b,c,d],X).
+        ?- remove_nth(5,[a,b,c,d],X).
+
+For test cases for remove_every_other, run:
+
+        ?- remove_every_other([a,b,c,d,e,f,g], Y).
+        ?- remove_every_other([a],Y).
+
