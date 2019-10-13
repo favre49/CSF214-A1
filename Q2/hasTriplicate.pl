@@ -9,5 +9,6 @@ accHas_Triplicate([Y|T],Y,Count):-
     accHas_Triplicate(T,Y,NextCount).
 
 accHas_Triplicate([Z|T],Y,Count):-
-    accHas_Triplicate(T,Y,Count),
-    Z\==Y.
+    Count=\=3,
+    Z\==Y,
+    accHas_Triplicate(T,Y,Count).
