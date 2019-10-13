@@ -50,9 +50,13 @@ For a sample test check, try:
 ## Problem 2
 
 Write a Prolog predicate for each of the following operations on a list:
+
     - sublist(X,Y): true if list X is a sublist of list Y. A sublist is the original list, in the same order, but with no/some elements removed. 
+
     - has_triplicate(X): true if list X contains at least three copies of an element. It also prints the element which is triplicated.
+
     - remove_nth(N,X,Y): prints list Y which is the list X with its Nth element removed. If X does not have an Nth element then the predicate should fail. Assume that N > 0 .
+    
     - remove_every_other(X,Y): prints a list Y which is the list X with every other element removed (the two lists should have the same first element). 
 
 Note: Each predicate should be able to print the alternative solutions if they exist.
