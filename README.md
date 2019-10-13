@@ -47,6 +47,9 @@ For a sample test check, try:
 
         ?- findPath(p,r,Path,Len).
 
+### Assumptions:
+The assumption made is that the given graph is simple. If the graph given is a multigraph, the output will show the same paths having different lengths, due to choosing different paths between two adjacent vertices.
+
 ## Problem 2
 
 ### The Problem:
@@ -91,3 +94,5 @@ For test cases for remove_every_other, run:
         ?- remove_every_other([a,b,c,d,e,f,g], Y).
         ?- remove_every_other([a],Y).
 
+### Assumptions:
+No assumptions were made that were not given in the question.
