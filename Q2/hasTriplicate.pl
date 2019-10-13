@@ -1,4 +1,4 @@
-has_Triplicate(A):-
+has_triplicate(A):-
     accHas_Triplicate(A,X,0).
 
 accHas_Triplicate(_,X,3):-
