@@ -71,14 +71,14 @@ For test cases for sublist, run:
 
         ?- sublist([x,y,z],[a,b,x,c,d,y,z]).
         ?- sublist([a,b,c],[w,a,b,c,r]).
-        ?- sublist([],[]). %Edge case
-        ?- sublist([a,b],[w,r]). %Negative case
+        ?- sublist([],[]). % Edge case
+        ?- sublist([a,b],[w,r]). % Negative case
 
 For test cases for has_triplicate, run:
 
         ?- has_triplicate([x,y,x,x,f,x]).
         ?- has_triplicate([a,b,a,b,a,b]).
-        ?- has_triplicate([]). %Edge case
+        ?- has_triplicate([]). % Edge case
         ?- has_triplicate([x,y,z,z,y,x]). % Negative case
 
 For test cases for remove_nth, run:
